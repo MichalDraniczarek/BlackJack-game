@@ -1,0 +1,143 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/blackJackTableBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*  Cards for croupier styling  */
+
+div.croupier-cards-space
+{
+    position: absolute;
+    left: 410px;
+    top: 50px;
+    width:550px;
+    min-height:150px;
+    border:1px solid black;
+}
+
+div.deck-of-cards-starting-pos
+{
+    position: absolute;
+    left: 710px;
+    top: 375px;
+    width:100px;
+    height: 150px;
+   
+    background-image: url(../img/01.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+div.new-card-pos-01
+{
+    position: absolute;
+    left: 910px;
+    top: 375px;
+    width:100px;
+    height: 150px;
+    border:1px solid gold;
+}
+
+/* Animated cards containers */
+
+.card-container
+{
+    width:100px;
+    height:150px;
+    margin:0 auto;
+    border:3px dashed #000;
+    background-color:#FDD700;
+    perspective:300px;
+}
+
+.card
+{
+    width:100%;
+    height:100%;
+    background-color:#EEE;
+    text-align:center;
+    transition-duration: 1s;
+}
+
+
+.card-container:hover > .card 
+{
+    transform:rotateY(-180deg);
+}
+
+
+.front-card
+{
+    position:absolute;
+    width:100%;
+    height:60%;
+    color:#F00;
+    font-size:1.6em;
+    background:url(../img/01.jpg) no-repeat;
+    background-size:100%;
+}
+  
+.back-card
+{
+    position:absolute;
+    width:50%;
+    height:30%;
+    color:#FFF;
+    font-size:1.6em;
+    background:url(../img/cardback.jpg) no-repeat;
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+/*  Cards for player styling  */
+
+div.player-cards-space
+{
+    position: absolute;
+    bottom: 50px;
+    left:410px;
+    width:550px;
+    min-height:150px;
+    border:1px solid yellow;
+}
+
+
+div.sum-of-all-cards-container
+{
+    position: absolute;
+    bottom: 50px;
+    left:1160px;
+    width:300px;
+    min-height:150px;
+    border:1px solid yellow;    
+}
+
+div.hit-card-action-button
+{
+    position: absolute;
+    bottom: 50px;
+    left:1510px;
+    width:150px;
+    min-height:150px;
+    border:1px solid red;    
+}
+
+div.pass-card-action-button
+{
+    position: absolute;
+    bottom: 50px;
+    left:1710px;
+    width:150px;
+    min-height:150px;
+    border:1px solid white;    
+}
+
+
+
