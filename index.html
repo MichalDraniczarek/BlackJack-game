@@ -6,40 +6,142 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="blackjackstyle.css">
+<link rel="stylesheet" href="mainmenustyle.css">
+
 
 <title>
-
+    BlackJack - game
 </title>
 </head>
+
 <body>
+<div class="popup-lose">
+    <div class="popup-text"><p>Niestety przegrałeś, spróbuj jeszcze raz</p></div>
+    <div class="restart-rund"><a href="#" class="next-rund-button" onClick="window.location.reload()">Następna runda</a></div>
+</div>
 
-    <div class="croupier-cards-space"></div>
+<div class="popup-blackjack">
+    <div class="popup-text"><p>Doskonale BLACKJACK!!!</p></div>
+    <div class="restart-rund"><a href="#" class="next-rund-button" onClick="window.location.reload()">Następna runda</a></div>
+</div>
 
-    <div class="deck-of-cards-starting-pos">
-        <div class="card-container">
-            <div class="card">
-                <div class="front-card">przod</div>
-                <div class="back-card">tyłłłłł</div>
-            </div>
-        </div>
+<div class="popup-blackjack-computer">
+    <div class="popup-text"><p>Komputer wygrywa BLACKJACK</p></div>
+    <div class="restart-rund"><a href="#" class="next-rund-button" onClick="window.location.reload()">Następna runda</a></div>
+</div>
+
+<div class="popup-lose-computer">
+    <div class="popup-text"><p>Komputer przegrywa punkt dla Ciebie</p></div>
+    <div class="restart-rund"><a href="#" class="next-rund-button" onClick="window.location.reload()">Następna runda</a></div>
+</div>
+
+<div class="popup-beat-on-points">
+    <div class="popup-text"><p>Komputer przegrywa punkt dla Ciebie</p></div>
+    <div class="restart-rund"><a href="#" class="next-rund-button" onClick="window.location.reload()">Następna runda</a></div>
+</div>
+
+<div class="popup-lose-on-points">
+    <div class="popup-text"><p>Komputer wygrywa punkt dla niego</p></div>
+    <div class="restart-rund"><a href="#" class="next-rund-button" onClick="window.location.reload()">Następna runda</a></div>
+</div>
+
+<div class="popup-even-score">
+    <div class="popup-text"><p>Mamy remis</p></div>
+    <div class="restart-rund"><a href="#" class="next-rund-button" onClick="window.location.reload()">Następna runda</a></div>
+</div>
+
+<div class="player-final-win">
+    <div class="popup-text"><p>Gratuluję wygrałeś całą rozgrywkę</p></div>
+    <div class="restart-rund"><a href="mainmenu.html" class="next-rund-button">Wróć do menu głównego</a></div>
+</div>
+
+<div class="computer-final-win">
+    <div class="popup-text"><p>Niestety przegrałeś całą rozgrywkę</p></div>
+    <div class="restart-rund"><a href="mainmenu.html" class="next-rund-button">Wróć do menu głównego</a></div>
+</div>
 
 
 
+<div class="playing-table">
+    <div class="croupier-cards-space">
 
     </div>
-    <div class="new-card-pos-01"></div>
+
+    <div class="sum-of-all-cards-computer">
+        <div class="score-value-des-computer">
+            <div class="max-score-value-text-computer">
+                <p>Max</p> 
+                <p>score</p>
+                <p>value</p>
+            </div>
+            <div class="min-score-value-text-computer">
+                <p>Min</p> 
+                <p>score</p>
+                <p>value</p>
+            </div>
+        </div>
+        <div class="score-value-computer">
+            <div class="max-point-value-computer"></div>
+            <div class="min-point-value-computer"></div>
+        </div>
+    </div>
+
+    <div class="deck-of-cards-starting-pos">
+
+    </div>
+    <div class="new-card-pos-01">
+
+    </div>
+
+
+    <div class="total-score-container">
+        <div class="computer-score-container">
+
+        </div>
+        <div class="score-des">
+            <div>SCORE</div>
+        </div>
+        <div class="player-score-container">
+
+        </div>
+    </div>
+
 
     <div class="player-cards-space"></div>
     
-    <div class="sum-of-all-cards-container"></div>
-    <div class="hit-card-action-button"></div>
-    <div class="pass-card-action-button"></div>
+    <div class="sum-of-all-cards-container">
+        <div class="score-value-des-player">
+            <div class="max-score-value-text-player">
+                <p>Max</p> 
+                <p>score</p>
+                <p>value</p>
+            </div>
+            <div class="min-score-value-text-player">
+                <p>Min</p> 
+                <p>score</p>
+                <p>value</p>
+            </div>
+        </div>
+        <div class="score-value-player">
+            <div class="max-point-value-player"></div>
+            <div class="min-point-value-player"></div>
+        </div>
+    </div>
+    <div class="hit-card-action-button">
+        <P>HIT</P>
+    </div>
+    <div class="pass-card-action-button">
+        <p>STAND</p>
+    </div>
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="javascriptob.js"></script>
 <script type="text/javascript" src="javascriptfn.js"></script>
 <script type="text/javascript" src="javascript.js"></script>
+<script type="text/javascript" src="javascriptmenucode.js"></script>
+
 </body>
 
 </html>

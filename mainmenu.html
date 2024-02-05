@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="blackjackstyle.css">
+<link rel="stylesheet" href="mainmenustyle.css">
+
+<title>
+    BlackJack - Main Menu
+</title>
+</head>
+<body>
+
+    <div class="popup-rules">
+        <div class="game-rules-container">
+            <div class="exit-game-rules-screen-btn"></div>
+            <h2>Zasady Gry</h2>
+            <p>W grze zarówno komputer jak i gracz otrzymują po 2 karty, z czego komputer jedną z kart odkrywa, a jedna pozostaje zakryta.</p>
+            <p>Celem gry jest dobieranie kart, dopóki gracz nie osiągnie całkowitej wartości posiadanych kart równej 21, lub wartości do niej najbardziej zbliżonej, ale nie przekraczającej 21.</p>
+            <p>Karta <span style="color:rgb(13, 191, 223)">AS</span> przyjmuje dwie wartości w zależności od posiadanej liczby punktów, a są to wartości <span style="color:rgb(13, 191, 223)">11</span> oraz <span style="color:rgb(13, 191, 223)">1</span>.</p>
+            <p>Pierwszy rusza się gracz, aby dobrać kartę należy kliknąć na przycisk <span style="color:rgb(146, 13, 13)">HIT</span>, aby zakończyć dobieranie kart wciśnij przycisk <span style="color:rgb(31, 206, 8)">STAND</span>.</p>
+            <p>Przekroczenie przez gracza wartości 21 pkt oznacza automatyczną porażkę, dobranie kart o wartości równej 21 oznacza automatyczne zwycięstwo, w pozostałych przypadkach o zwycięstwie decyduje stosunek punktów gracza i gracza komputerowego, w przypadku remisu żaden z graczy nie otrzymuje punktu.</p>
+            <p>Gracz komputerowy będzie dobierał kolejne karty dopóki całkowita wartość posiadanych przez niego punktów będzie mniejsza od 17.</p>
+            
+        </div>  
+    </div>
+
+    <div class="main-menu-container">
+        <div class="start-game">
+            <a href="index.html"><p>Nowa Gra</p></a>
+        </div>
+        <div class="victory-points">
+            <div class="victory-points-des">
+                <p>Do ilu punktów chcesz zagrać?</p>
+                <p>(min. 3 max. 20)</p>
+            </div>
+            <div class="display-points-container">
+                <div class="subtract-victory-point">
+                    <div class="subtract-victory-point-button"></div>
+                </div>
+                <div class="show-current-victory-points">
+                    <div class="point-slot-container">
+                        <div class="point-slot">3</div>
+                    </div>
+                </div>
+                <div class="add-victory-points">
+                    <div class="add-victory-points-button"></div>
+                </div>
+            </div>
+        </div>
+        <div class="game-rules">
+            <p>Zasady Gry</p>
+        </div>
+    </div>
+    
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascriptob.js"></script>
+    <script type="text/javascript" src="javascriptfn.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript" src="javascriptmenucode.js"></script>
+
+</script>
+</body>
+
+</html>
